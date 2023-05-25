@@ -5,7 +5,7 @@
 	<title>Twój koszyk</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523022155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,32 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__top top-header">
-				<div class="top-header__container">
-					<div class="top-header__column">
-						<div class="top-header__phone">
-							<div class="top-header__item _icon-phone"><span>Zadzwoń do nas</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-phone">
-								<li><a href="tel:+48730301053">+48 730 301 053 Ursynow</a></li>
-								<li><a href="tel:+48797430770">+48 797 430 770 Wilanow</a></li>
-							</ul>
-						</div>
-						<div class="top-header__email">
-							<div class="top-header__item _icon-mail"><span>Napisz do nas E-mail</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-email">
-								<li><a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></li>
-								<li><a href="mailto:warszawa-wilanow@fitcake.pl">warszawa-wilanow@fitcake.pl</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="top-header__column">
-						<p class="top-header__labal">Franczyzodawca:</p>
-						<a href="#" class="top-header__link _icon-link">FitCake.pl</a>
-						<a href="#" class="top-header__link _icon-link">Franczyza</a>
-					</div>
-				</div>
-			</div>
-			<div data-scroll-show class="header__main main-header">
+			<div data-scroll-show class="header__main main-header header__main-2">
 				<div class="main-header__container">
 					<div class="main-header__burger">
 						<button type="button" class="icon-menu"><span></span></button>
@@ -57,6 +32,7 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
+								<li><a href="#">Franczyzodawca</a></li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -85,6 +61,7 @@
 								<img src="img/font-icon/search-mobile.svg" alt="">
 							</button>
 						</div>
+						<!-- _showList -->
 						<div data-da=".mobile-search, 768" class="search-header__dropdown dropdown-search-header">
 							<a href="#" class="dropdown-search-header__product">
 								<div class="dropdown-search-header__img">
@@ -109,6 +86,42 @@
 									<div class="dropdown-search-header__prices">
 										<div class="dropdown-search-header__old">229,99 zł</div>
 										<div class="dropdown-search-header__new _active">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
 									</div>
 								</div>
 							</a>
@@ -162,8 +175,8 @@
 									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt=""></picture>
 								</div>
 								<div class="products-basket__body">
-									<a href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 									<div class="products-basket__content">
+										<a title="name product" href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 										<div class="products-basket__items">
 											<div class="products-basket__item">
 												<span>Cena za szt.</span>
@@ -181,20 +194,50 @@
 												<span>Suma</span>
 												<div class="products-basket__price">840 zł</div>
 											</div>
-											<div class="products-basket__item products-basket__item-decoration">
-												<select name="decoration" class="products-basket__decoration"">
-                                                        <option value=" 1" selected>Wybór ozdobienia*</option>
-													<option value="2">dekoracja jak na stronie internetowej;</option>
-													<option value="3">prześlij swój plik</option>
-													<option value="4">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda +25 zł</option>
-													<option value="4">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda +100 zł</option>
-												</select>
+										</div>
+										<div class="products-basket__item decoration-basket">
+											<div class="decoration-basket__header">
+												<span>Wybór ozdobienia*</span>
+												<a href="#" class="decoration-basket__edit">zmień dekorację</a>
+												<a href="#" class="decoration-basket__edit">anuluj</a>
+											</div>
+											<div class="decoration-basket__content">
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekoracja jak na stronie internetowej</div>
+													<div class="decoration-basket__item">0 zl</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">prześlij swój plik</div>
+													<div class="decoration-basket__item">Cena jest negocjowana indywidualnie</div>
+													<a href="#" class="decoration-basket__action">
+														pobierać
+														<input type="file" name="file">
+													</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda</div>
+													<div class="decoration-basket__item">+25 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda</div>
+													<div class="decoration-basket__item">+100 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
 											</div>
 										</div>
-										<button data-da=".products-basket__label, 850" type="button" class="products-basket__remove">
-											<img src="img/font-icon/remove.svg" alt="">
-										</button>
+										<div class="products-basket__inscription inscription-basket">
+											<div class="inscription-basket__label">Napis na torcie:<strong>Napis</strong></div>
+											<div class="inscription-basket__actions">
+												<button data-popup type="button" class="inscription-basket__button">Zmień napis</button>
+												<button type="button" class="inscription-basket__button">Anulować</button>
+											</div>
+										</div>
 									</div>
+									<button type="button" class="products-basket__remove">
+										<img src="img/font-icon/remove.svg" alt="">
+									</button>
 								</div>
 							</div>
 							<div class="basket__products products-basket">
@@ -202,8 +245,8 @@
 									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt=""></picture>
 								</div>
 								<div class="products-basket__body">
-									<a href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 									<div class="products-basket__content">
+										<a title="name product" href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 										<div class="products-basket__items">
 											<div class="products-basket__item">
 												<span>Cena za szt.</span>
@@ -221,20 +264,43 @@
 												<span>Suma</span>
 												<div class="products-basket__price">840 zł</div>
 											</div>
-											<div class="products-basket__item products-basket__item-decoration">
-												<select name="decoration" class="products-basket__decoration"">
-                                                        <option value=" 1" selected>Wybór ozdobienia*</option>
-													<option value="2">dekoracja jak na stronie internetowej;</option>
-													<option value="3">prześlij swój plik</option>
-													<option value="4">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda +25 zł</option>
-													<option value="4">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda +100 zł</option>
-												</select>
+										</div>
+										<div class="products-basket__item decoration-basket">
+											<div class="decoration-basket__header">
+												<span>Wybór ozdobienia*</span>
+												<a href="#" class="decoration-basket__edit">zmień dekorację</a>
+												<a href="#" class="decoration-basket__edit">anuluj</a>
+											</div>
+											<div class="decoration-basket__content">
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekoracja jak na stronie internetowej</div>
+													<div class="decoration-basket__item">0 zl</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">prześlij swój plik</div>
+													<div class="decoration-basket__item">Cena jest negocjowana indywidualnie</div>
+													<a href="#" class="decoration-basket__action">
+														pobierać
+														<input type="file" name="file">
+													</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda</div>
+													<div class="decoration-basket__item">+25 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda</div>
+													<div class="decoration-basket__item">+100 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
 											</div>
 										</div>
-										<button data-da=".products-basket__label, 850" type="button" class="products-basket__remove">
-											<img src="img/font-icon/remove.svg" alt="">
-										</button>
 									</div>
+									<button type="button" class="products-basket__remove">
+										<img src="img/font-icon/remove.svg" alt="">
+									</button>
 								</div>
 							</div>
 							<div class="basket__products products-basket">
@@ -242,8 +308,8 @@
 									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt=""></picture>
 								</div>
 								<div class="products-basket__body">
-									<a href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 									<div class="products-basket__content">
+										<a title="name product" href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 										<div class="products-basket__items">
 											<div class="products-basket__item">
 												<span>Cena za szt.</span>
@@ -261,20 +327,44 @@
 												<span>Suma</span>
 												<div class="products-basket__price">840 zł</div>
 											</div>
-											<div class="products-basket__item products-basket__item-decoration">
-												<select name="decoration" class="products-basket__decoration"">
-                                                        <option value=" 1" selected>Wybór ozdobienia*</option>
-													<option value="2">dekoracja jak na stronie internetowej;</option>
-													<option value="3">prześlij swój plik</option>
-													<option value="4">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda +25 zł</option>
-													<option value="4">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda +100 zł</option>
-												</select>
+										</div>
+										<div class="products-basket__item decoration-basket">
+											<div class="decoration-basket__header">
+												<span>Wybór ozdobienia*</span>
+												<a href="#" class="decoration-basket__edit">zmień dekorację</a>
+												<a href="#" class="decoration-basket__edit">anuluj</a>
+											</div>
+
+											<div class="decoration-basket__content">
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekoracja jak na stronie internetowej</div>
+													<div class="decoration-basket__item">0 zl</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">prześlij swój plik</div>
+													<div class="decoration-basket__item">Cena jest negocjowana indywidualnie</div>
+													<a href="#" class="decoration-basket__action">
+														pobierać
+														<input type="file" name="file">
+													</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda</div>
+													<div class="decoration-basket__item">+25 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda</div>
+													<div class="decoration-basket__item">+100 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
 											</div>
 										</div>
-										<button data-da=".products-basket__label, 850" type="button" class="products-basket__remove">
-											<img src="img/font-icon/remove.svg" alt="">
-										</button>
 									</div>
+									<button type="button" class="products-basket__remove">
+										<img src="img/font-icon/remove.svg" alt="">
+									</button>
 								</div>
 							</div>
 							<div class="basket__products products-basket">
@@ -282,8 +372,8 @@
 									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.jpg" alt=""></picture>
 								</div>
 								<div class="products-basket__body">
-									<a href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 									<div class="products-basket__content">
+										<a title="name product" href="#" class="products-basket__label">Deser a'la Fantasia Maliny & Kruche Ciasteczka (low fodmap)</a>
 										<div class="products-basket__items">
 											<div class="products-basket__item">
 												<span>Cena za szt.</span>
@@ -301,20 +391,43 @@
 												<span>Suma</span>
 												<div class="products-basket__price">840 zł</div>
 											</div>
-											<div class="products-basket__item products-basket__item-decoration">
-												<select name="decoration" class="products-basket__decoration"">
-                                                        <option value=" 1" selected>Wybór ozdobienia*</option>
-													<option value="2">dekoracja jak na stronie internetowej;</option>
-													<option value="3">prześlij swój plik</option>
-													<option value="4">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda +25 zł</option>
-													<option value="4">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda +100 zł</option>
-												</select>
+										</div>
+										<div class="products-basket__item decoration-basket">
+											<div class="decoration-basket__header">
+												<span>Wybór ozdobienia*</span>
+												<a href="#" class="decoration-basket__edit">zmień dekorację</a>
+												<a href="#" class="decoration-basket__edit">anuluj</a>
+											</div>
+											<div class="decoration-basket__content">
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekoracja jak na stronie internetowej</div>
+													<div class="decoration-basket__item">0 zl</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">prześlij swój plik</div>
+													<div class="decoration-basket__item">Cena jest negocjowana indywidualnie</div>
+													<a href="#" class="decoration-basket__action">
+														pobierać
+														<input type="file" name="file">
+													</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Light: 5-6 topperów + kwiaty waflowe, kokarda</div>
+													<div class="decoration-basket__item">+25 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
+												<div class="decoration-basket__row">
+													<div class="decoration-basket__caption">dekor Premium: toppery do 20 szt, kwiaty waflowe, dodatkowe jagody/owoce, świece, kokarda</div>
+													<div class="decoration-basket__item">+100 zł</div>
+													<a href="#" class="decoration-basket__action">Wybierz</a>
+												</div>
 											</div>
 										</div>
-										<button data-da=".products-basket__label, 850" type="button" class="products-basket__remove">
-											<img src="img/font-icon/remove.svg" alt="">
-										</button>
 									</div>
+									<button type="button" class="products-basket__remove">
+										<img src="img/font-icon/remove.svg" alt="">
+									</button>
 								</div>
 							</div>
 						</div>
@@ -324,18 +437,22 @@
 								<div class="result-basket__label">Wartość produktów</div>
 								<div class="result-basket__price">2100 zł</div>
 							</div>
-							<div class="result-basket__cod cod-result">
-								<div class="form-checkout__input form-input form-checkout__input-cod">
-									<div class="form-input__body">
-										<div class="form-input__label">Masz kod rabatowy?</div>
-										<input type="number" name="cod" class="input">
+							<form action="#" class="result-basket__cod cod-result">
+								<div class="cod-result__value _hide">
+									<div class="form-checkout__input form-input form-checkout__input-cod">
+										<div class="form-input__body">
+											<div class="form-input__label">Masz kod rabatowy?</div>
+											<input type="number" name="cod" class="input">
+										</div>
+										<div class="form-input__error form-input__error-cod"><span>!</span>Optional helper text</div>
 									</div>
-									<div class="form-input__error form-input__error-cod"><span>!</span>Optional helper text</div>
+									<button type="button" class="cod-result__return button button-pink">zastosuj</button>
 								</div>
-								<div class="cod-result__text"><span></span></div>
-								<button type="button" class="cod-result__return button button-pink">zastosuj</button>
-								<button type="button" class="cod-result__delete button button-pink">Anuluj</button>
-							</div>
+								<div class="cod-result__inner _show">
+									<div class="cod-result__text">Cod promocyjny:<span>1</span></div>
+									<a title="Anuluj" href="" class="cod-result__delete button">Anuluj</a>
+								</div>
+							</form>
 							<div class="result-basket__row">
 								<div class="result-basket__label">Zniżka</div>
 								<div class="result-basket__item">— zł</div>
@@ -383,8 +500,22 @@
 				</div>
 			</div>
 		</footer>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close _icon-close"></button>
+					<div class="popup__text">
+						<input type="text" name="napis" placeholder="Napis na torcie" class="popup__input">
+						<div class="popup__action">
+							<a href="#" class="popup__save">Save</a>
+							<a data-close href="#" class="popup__cansel">Cansel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230523022155"></script>
+	<script src="js/app.min.js?_v=20230525105448"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
 	<title>Blog</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523022155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,32 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__top top-header">
-				<div class="top-header__container">
-					<div class="top-header__column">
-						<div class="top-header__phone">
-							<div class="top-header__item _icon-phone"><span>Zadzwoń do nas</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-phone">
-								<li><a href="tel:+48730301053">+48 730 301 053 Ursynow</a></li>
-								<li><a href="tel:+48797430770">+48 797 430 770 Wilanow</a></li>
-							</ul>
-						</div>
-						<div class="top-header__email">
-							<div class="top-header__item _icon-mail"><span>Napisz do nas E-mail</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-email">
-								<li><a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></li>
-								<li><a href="mailto:warszawa-wilanow@fitcake.pl">warszawa-wilanow@fitcake.pl</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="top-header__column">
-						<p class="top-header__labal">Franczyzodawca:</p>
-						<a href="#" class="top-header__link _icon-link">FitCake.pl</a>
-						<a href="#" class="top-header__link _icon-link">Franczyza</a>
-					</div>
-				</div>
-			</div>
-			<div data-scroll-show class="header__main main-header">
+			<div data-scroll-show class="header__main main-header header__main-2">
 				<div class="main-header__container">
 					<div class="main-header__burger">
 						<button type="button" class="icon-menu"><span></span></button>
@@ -57,6 +32,7 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
+								<li><a href="#">Franczyzodawca</a></li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -85,6 +61,7 @@
 								<img src="img/font-icon/search-mobile.svg" alt="">
 							</button>
 						</div>
+						<!-- _showList -->
 						<div data-da=".mobile-search, 768" class="search-header__dropdown dropdown-search-header">
 							<a href="#" class="dropdown-search-header__product">
 								<div class="dropdown-search-header__img">
@@ -109,6 +86,42 @@
 									<div class="dropdown-search-header__prices">
 										<div class="dropdown-search-header__old">229,99 zł</div>
 										<div class="dropdown-search-header__new _active">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
 									</div>
 								</div>
 							</a>
@@ -161,9 +174,9 @@
 								<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Bezglutenowe ciastka z dyni</a></h3>
+								<h2><a href="#">Bezglutenowe ciastka z dyni</a></h2>
 								<p>Przygotuj te pyszne i zdrowe bezglutenowe ciastka z puree dyniowego, idealne na przekąskę lub do kawy!</p>
-								<div class="item-blog__data">16 sierpnia 2023</div>
+								<time>16 sierpnia 2023</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -171,9 +184,9 @@
 								<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Tarta z owocami sezonowymi</a></h3>
+								<h2><a href="#">Tarta z owocami sezonowymi</a></h2>
 								<p>Spróbuj tej pysznej i zdrowej tarty z dodatkiem sezonowych owoców - idealna na letnie przyjęcia</p>
-								<time class="item-blog__data">7 maja 2023</time>
+								<time>7 maja 2023</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -181,9 +194,9 @@
 								<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Koktajl proteinowy z bananem i migdałami</a></h3>
+								<h2><a href="#">Koktajl proteinowy z bananem i migdałami</a></h2>
 								<p>Oto pyszny i sycący koktajl proteinowy, który pomoże ci zregenerować mięśnie po treningu!</p>
-								<time class="item-blog__data">18 lutego 2023</time>
+								<time>18 lutego 2023</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -191,9 +204,9 @@
 								<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Jogurtowe muffiny z borówkami</a></h3>
+								<h2><a href="#">Jogurtowe muffiny z borówkami</a></h2>
 								<p>Przygotuj te pyszne i zdrowe muffiny z jogurtem i borówkami, idealne na lekką przekąskę lub śniadanie!</p>
-								<time class="item-blog__data">3 grudnia 2022</time>
+								<time>3 grudnia 2022</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -201,9 +214,9 @@
 								<picture><source srcset="img/blog/05.webp" type="image/webp"><img src="img/blog/05.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Ciastka z masłem orzechowym</a></h3>
+								<h2><a href="#">Ciastka z masłem orzechowym</a></h2>
 								<p>Zrób te proste i pyszne ciasteczka z dodatkiem masła orzechowego - idealne na przekąskę przed treningiem!</p>
-								<time class="item-blog__data">22 września 2022</time>
+								<time>22 września 2022</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -211,9 +224,9 @@
 								<picture><source srcset="img/blog/06.webp" type="image/webp"><img src="img/blog/06.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Fit brownie z batatami</a></h3>
+								<h2><a href="#">Fit brownie z batatami</a></h2>
 								<p>Jeśli lubisz brownie, pokochasz to zdrowe i smaczne ciasto z batatami i kakao!</p>
-								<time class="item-blog__data">11 lipca 2022</time>
+								<time>11 lipca 2022</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -221,9 +234,9 @@
 								<picture><source srcset="img/blog/08.webp" type="image/webp"><img src="img/blog/08.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Chia pudding z jagodami</a></h3>
+								<h2><a href="#">Chia pudding z jagodami</a></h2>
 								<p>Spróbuj tego zdrowego i smacznego pudding z dodatkiem jagód i chia - idealny na śniadanie lub lekki deser!</p>
-								<time class="item-blog__data">2 kwietnia 2022</time>
+								<time>2 kwietnia 2022</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -231,9 +244,9 @@
 								<picture><source srcset="img/blog/07.webp" type="image/webp"><img src="img/blog/07.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Proteinowe ciasteczka owsiane</a></h3>
+								<h2><a href="#">Proteinowe ciasteczka owsiane</a></h2>
 								<p>Przygotuj te pyszne, pełne białka ciasteczka owsiane, idealne na przekąskę lub na deser!</p>
-								<time class="item-blog__data">14 stycznia 2022</time>
+								<time>14 stycznia 2022</time>
 							</div>
 						</article>
 						<article class="blog__item item-blog">
@@ -241,9 +254,9 @@
 								<picture><source srcset="img/blog/09.webp" type="image/webp"><img src="img/blog/09.jpg" alt=""></picture>
 							</a>
 							<div class="item-blog__content">
-								<h3 class="item-blog__title"><a href="#">Czekoladowe muffiny z awokado</a></h3>
+								<h2><a href="#">Czekoladowe muffiny z awokado</a></h2>
 								<p>Oto zdrowa i pyszna alternatywa dla tradycyjnych muffinów z dodatkiem awokado!</p>
-								<time class="item-blog__data">25 października 2021</time>
+								<time>25 października 2021</time>
 							</div>
 						</article>
 					</div>
@@ -312,7 +325,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230523022155"></script>
+	<script src="js/app.min.js?_v=20230525105448"></script>
 </body>
 
 </html>

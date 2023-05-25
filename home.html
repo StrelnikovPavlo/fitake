@@ -5,7 +5,7 @@
 	<title>Main</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523022155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,32 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__top top-header">
-				<div class="top-header__container">
-					<div class="top-header__column">
-						<div class="top-header__phone">
-							<div class="top-header__item _icon-phone"><span>Zadzwoń do nas</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-phone">
-								<li><a href="tel:+48730301053">+48 730 301 053 Ursynow</a></li>
-								<li><a href="tel:+48797430770">+48 797 430 770 Wilanow</a></li>
-							</ul>
-						</div>
-						<div class="top-header__email">
-							<div class="top-header__item _icon-mail"><span>Napisz do nas E-mail</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-email">
-								<li><a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></li>
-								<li><a href="mailto:warszawa-wilanow@fitcake.pl">warszawa-wilanow@fitcake.pl</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="top-header__column">
-						<p class="top-header__labal">Franczyzodawca:</p>
-						<a href="#" class="top-header__link _icon-link">FitCake.pl</a>
-						<a href="#" class="top-header__link _icon-link">Franczyza</a>
-					</div>
-				</div>
-			</div>
-			<div data-scroll-show class="header__main main-header">
+			<div data-scroll-show class="header__main main-header header__main-2">
 				<div class="main-header__container">
 					<div class="main-header__burger">
 						<button type="button" class="icon-menu"><span></span></button>
@@ -57,6 +32,7 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
+								<li><a href="#">Franczyzodawca</a></li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -85,6 +61,7 @@
 								<img src="img/font-icon/search-mobile.svg" alt="">
 							</button>
 						</div>
+						<!-- _showList -->
 						<div data-da=".mobile-search, 768" class="search-header__dropdown dropdown-search-header">
 							<a href="#" class="dropdown-search-header__product">
 								<div class="dropdown-search-header__img">
@@ -124,6 +101,42 @@
 									</div>
 								</div>
 							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
 						</div>
 						<div class="search-header__mobile mobile-search">
 							<div class="mobile-search__heaader">
@@ -148,16 +161,9 @@
 				<div class="mainscreen__slider swiper">
 					<div class="mainscreen__wrapper swiper-wrapper">
 						<div class="mainscreen__slide swiper-slide">
-							<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
-							<div class="swiper-slide__content">
-								<div class="swiper-slide__container">
-									<h1 class="swiper-slide__title">Tort Oreo</h1>
-									<p class="swiper-slide__subtitle">Keto, bez cukru, bez glutenu</p>
-								</div>
+							<div class="swiper-slide__img">
+								<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
 							</div>
-						</div>
-						<div class="mainscreen__slide swiper-slide">
-							<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
 							<div class="swiper-slide__content">
 								<div class="swiper-slide__container">
 									<h1 class="swiper-slide__title">Tort</h1>
@@ -166,10 +172,23 @@
 							</div>
 						</div>
 						<div class="mainscreen__slide swiper-slide">
-							<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
+							<div class="swiper-slide__img">
+								<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
+							</div>
 							<div class="swiper-slide__content">
 								<div class="swiper-slide__container">
-									<h1 class="swiper-slide__title">Oreo</h1>
+									<h1 class="swiper-slide__title">Tort Oreo</h1>
+									<p class="swiper-slide__subtitle">Keto, bez cukru, bez glutenu</p>
+								</div>
+							</div>
+						</div>
+						<div class="mainscreen__slide swiper-slide">
+							<div class="swiper-slide__img">
+								<picture><source srcset="img/mainscreen/01.webp" type="image/webp"><img src="img/mainscreen/01.png" alt=""></picture>
+							</div>
+							<div class="swiper-slide__content">
+								<div class="swiper-slide__container">
+									<h1 class="swiper-slide__title">Tort</h1>
 									<p class="swiper-slide__subtitle">Keto, bez cukru, bez glutenu</p>
 								</div>
 							</div>
@@ -272,7 +291,7 @@
 								<img src="img/types/07.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>VEGAN</span></a></h3>
+								<h3><a href="#" class="item-types__title"><span>VEGAN</span><img src="img/font-icon/more.svg" alt=""></a></h3>
 								<p>Dla wegan słodkości są na mleczku kokosowym, używamy zastępnik jajek do wypieków.</p>
 							</div>
 						</article>
@@ -281,7 +300,7 @@
 								<img src="img/types/02.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>KETO</span></a></h3>
+								<h3><a href="#" class="item-types__title"><span>KETO</span><img src="img/font-icon/more.svg" alt=""></a></h3>
 								<p>Dla osób które ograniczają w diecie spożycie węglowodanów, mamy ponad 70 pozycji keto-słodkości.</p>
 							</div>
 						</article>
@@ -290,7 +309,7 @@
 								<img src="img/types/06.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>LOW FODMAP</span></a></h3>
+								<h3><a href="#" class="item-types__title"><span>LOW FODMAP</span><img src="img/font-icon/more.svg" alt=""></a></h3>
 								<p>Dla tych co muszą uważać na dolegliwości ze strony układu pokarmowego, zamiennik stevia.</p>
 							</div>
 						</article>
@@ -299,7 +318,7 @@
 								<img src="img/types/01.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>Bez Glutenu</span></a></h3>
+								<h3><a href="#" class="item-types__title"><span>Bez Glutenu</span><img src="img/font-icon/more.svg" alt=""></a></h3>
 								<p>Wszystkie nasze produkty są bezglutenowe, są bezpieczne dla osób chorujących na celiakię.</p>
 							</div>
 						</article>
@@ -308,7 +327,9 @@
 								<img src="img/types/05.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>Bez Cukru</span></a></h3>
+								<h3>
+									<p class="item-types__title">Bez Cukru
+								</h3>
 								<p>Wszystkie nasze produkty bez cukru, używamy u większości produktów erytrol, dla osób na diecie low fodmap stevia..</p>
 							</div>
 						</article>
@@ -317,7 +338,9 @@
 								<img src="img/types/03.svg" alt="">
 							</a>
 							<div class="item-types__content">
-								<h3><a href="#" class="item-types__title _icon-more"><span>Bez Laktozy</span></a></h3>
+								<h3>
+									<p class="item-types__title">Bez Laktozy</p>
+								</h3>
 								<p>Większość słodkości nie mają w składzie laktozy poza częścią serników, dla kremu używamy mleczko kokosowe.</p>
 							</div>
 						</article>
@@ -419,7 +442,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230523022155"></script>
+	<script src="js/app.min.js?_v=20230525105448"></script>
 </body>
 
 </html>

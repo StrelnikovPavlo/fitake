@@ -5,7 +5,7 @@
 	<title>Blog</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523022155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,32 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__top top-header">
-				<div class="top-header__container">
-					<div class="top-header__column">
-						<div class="top-header__phone">
-							<div class="top-header__item _icon-phone"><span>Zadzwoń do nas</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-phone">
-								<li><a href="tel:+48730301053">+48 730 301 053 Ursynow</a></li>
-								<li><a href="tel:+48797430770">+48 797 430 770 Wilanow</a></li>
-							</ul>
-						</div>
-						<div class="top-header__email">
-							<div class="top-header__item _icon-mail"><span>Napisz do nas E-mail</span></div>
-							<ul class="top-header__dropdown top-header__dropdown-email">
-								<li><a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></li>
-								<li><a href="mailto:warszawa-wilanow@fitcake.pl">warszawa-wilanow@fitcake.pl</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="top-header__column">
-						<p class="top-header__labal">Franczyzodawca:</p>
-						<a href="#" class="top-header__link _icon-link">FitCake.pl</a>
-						<a href="#" class="top-header__link _icon-link">Franczyza</a>
-					</div>
-				</div>
-			</div>
-			<div data-scroll-show class="header__main main-header">
+			<div data-scroll-show class="header__main main-header header__main-2">
 				<div class="main-header__container">
 					<div class="main-header__burger">
 						<button type="button" class="icon-menu"><span></span></button>
@@ -57,6 +32,7 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
+								<li><a href="#">Franczyzodawca</a></li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -85,6 +61,7 @@
 								<img src="img/font-icon/search-mobile.svg" alt="">
 							</button>
 						</div>
+						<!-- _showList -->
 						<div data-da=".mobile-search, 768" class="search-header__dropdown dropdown-search-header">
 							<a href="#" class="dropdown-search-header__product">
 								<div class="dropdown-search-header__img">
@@ -109,6 +86,42 @@
 									<div class="dropdown-search-header__prices">
 										<div class="dropdown-search-header__old">229,99 zł</div>
 										<div class="dropdown-search-header__new _active">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="dropdown-search-header__product">
+								<div class="dropdown-search-header__img">
+									<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.jpg" alt=""></picture>
+								</div>
+								<div class="dropdown-search-header__content">
+									<div class="dropdown-search-header__title">Tort Snickers</div>
+									<p class="dropdown-search-header__status _icon-vegan">Vegan</p>
+									<div class="dropdown-search-header__prices">
+										<div class="dropdown-search-header__new">od 150,- zł</div>
 									</div>
 								</div>
 							</a>
@@ -159,7 +172,7 @@
 						<p class="about__text">Zwrotu towaru wg polskiego prawa możesz dokonać do 14 dni od daty otrzymania towaru. Z uwagi na specyfikę produktów Cukierni, prosimy o zapoznanie się z «Prawo do odstąpienia od umowy»</p>
 						<div class="about__block">
 							<div class="about__head">
-								<h2 class="about__caption">Procedura zwrotu/reklamacji</h2>
+								<h2>Procedura zwrotu/reklamacji</h2>
 								<div class="about__icon"><img src="img/about/arrows.svg" alt=""></div>
 							</div>
 							<ul class="about__list">
@@ -172,21 +185,21 @@
 						</div>
 						<div class="about__block">
 							<div class="about__head">
-								<h2 class="about__caption">Warunki zwrotu i wyjątki</h2>
+								<h2>Warunki zwrotu i wyjątki</h2>
 								<div class="about__icon"><img src="img/about/return.svg" alt=""></div>
 							</div>
 							<p>Prawo do odstąpienia od umowy zawartej na odległość nie przysługuje Konsumentowi w przypadku niektórych umów, takich jak rzeczy nieprefabrykowane, wyprodukowane według specyfikacji Konsumenta, rzeczy dostarczane w zapieczętowanym opakowaniu, których nie można zwrócić ze względu na ochronę zdrowia lub ze względów higienicznych, rzeczy ulegające szybkiemu zepsuciu lub mające krótki termin przydatności do użycia oraz usługi świadczone za wyraźną zgodą Konsumenta.</p>
 						</div>
 						<div class="about__block">
 							<div class="about__head">
-								<h2 class="about__caption">Zwrot płatności i czas rozpatrzenia reklamacji</h2>
+								<h2>Zwrot płatności i czas rozpatrzenia reklamacji</h2>
 								<div class="about__icon"><img src="img/about/time.svg" alt=""></div>
 							</div>
 							<p>Zwrot pieniędzy za zwracany/reklamowany towar nastąpi w ciągu 14 dni od akceptacji zwrotu lub pozytywnego rozpatrzenia reklamacji. W przypadku płatności online, przelewu tradycyjnego lub kartą płatniczą, zwrot zostanie przekazany na odpowiednie konto bankowe. Czas rozpatrzenia reklamacji wynosi 1-2 dni.</p>
 						</div>
 						<div class="about__block">
 							<div class="about__head">
-								<h2 class="about__caption">Prawo do odstąpienia od umowy</h2>
+								<h2>Prawo do odstąpienia od umowy</h2>
 								<div class="about__icon"><img src="img/about/vrite.svg" alt=""></div>
 							</div>
 							<ul class="about__list about__list-none">
@@ -240,7 +253,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230523022155"></script>
+	<script src="js/app.min.js?_v=20230525105448"></script>
 </body>
 
 </html>

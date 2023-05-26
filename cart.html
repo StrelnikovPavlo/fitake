@@ -5,7 +5,7 @@
     	<title>Sernik Chałwowy</title>
     	<meta charset="UTF-8">
     	<meta name="format-detection" content="telephone=no">
-    	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
+    	<link rel="stylesheet" href="css/style.min.css?_v=20230527003517">
     	<link rel="icon" type="image/png"" href=" img/logo.svg">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -32,7 +32,21 @@
     								<li><a href="#">O nas</a></li>
     								<li><a href="#">Blog</a></li>
     								<li><a href="#">Kontakt</a></li>
-    								<li><a href="#">Franczyzodawca</a></li>
+    								<li class="menu__list-submenu _icon-arrow">
+    									Franczyzodawca
+    									<ul class="menu__dropdown">
+    										<li><a href="#">
+    												FitCake.pl
+    												<img src="img/font-icon/more.svg" alt="">
+    											</a></li>
+    										<li>
+    											<a href="#">
+    												Franczyza
+    												<img src="img/font-icon/more.svg" alt="">
+    											</a>
+    										</li>
+    									</ul>
+    								</li>
     							</ul>
     						</nav>
     						<div class="menu__footer">
@@ -170,34 +184,27 @@
     				<div class="cart__container">
     					<div class="cart__main">
     						<div class="cart__slider slider-cart swiper">
+    							<button type="button" class="slider-cart__arrow slider-cart__arrow-prev">
+    								<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    									<path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff" />
+    								</svg>
+    							</button>
     							<div class="slider-cart__wrapper swiper-wrapper">
-    								<!-- <picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
-                                    <picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
-                                    <picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
-                                    <picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
-                                    <picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture> -->
-    								<a href="img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
-    									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
+    								<a href="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/05.jpg" class="slider-cart__slide swiper-slide lightbox" data-group="gallery">
+    									<picture><source srcset="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/card2.webp" type="image/webp"><img src="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/card2.jpg" alt=""></picture>
     								</a>
-    								<a href="img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
-    									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
+    								<a href="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/06.jpg" class="slider-cart__slide swiper-slide lightbox" data-group="gallery">
+    									<picture><source srcset="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/06.webp" type="image/webp"><img src="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/06.jpg" alt=""></picture>
     								</a>
-    								<a href="img/product/01.png" class="slider-cart__slide swiper-slide lightbox">
-    									<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture>
+    								<a href="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/07.jpg" class="slider-cart__slide swiper-slide lightbox" data-group="gallery">
+    									<picture><source srcset="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/07.webp" type="image/webp"><img src="https://fitcakeursynow.com/content/torty/biala-czekolada-z-malinami/07.jpg" alt=""></picture>
     								</a>
     							</div>
-    							<div class="slider-cart__navigation">
-    								<button type="button" class="slider-cart__arrow slider-cart__arrow-prev">
-    									<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    										<path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff" />
-    									</svg>
-    								</button>
-    								<button type="button" class="slider-cart__arrow slider-cart__arrow-next">
-    									<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    										<path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff" />
-    									</svg>
-    								</button>
-    							</div>
+    							<button type="button" class="slider-cart__arrow slider-cart__arrow-next">
+    								<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    									<path d="M0.682877 5.27296V6.72751H9.41015L5.41015 10.7275L6.44288 11.7602L12.2029 6.00023L6.44288 0.240234L5.41015 1.27296L9.41015 5.27296H0.682877Z" fill="#fff" />
+    								</svg>
+    							</button>
     						</div>
     						<div class="cart__desc desc-cart">
     							<h1 class="desc-cart__title">Sernik Chałwowy</h1>
@@ -319,7 +326,7 @@
     			</div>
     		</footer>
     	</div>
-    	<script src="js/app.min.js?_v=20230525105448"></script>
+    	<script src="js/app.min.js?_v=20230527003517"></script>
     </body>
 
     </html>

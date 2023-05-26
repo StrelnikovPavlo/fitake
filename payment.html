@@ -2,10 +2,10 @@
 <html lang="pl">
 
 <head>
-	<title>Blog</title>
+	<title>Płatność i dostawa</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230527003517">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -32,7 +32,21 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
-								<li><a href="#">Franczyzodawca</a></li>
+								<li class="menu__list-submenu _icon-arrow">
+									Franczyzodawca
+									<ul class="menu__dropdown">
+										<li><a href="#">
+												FitCake.pl
+												<img src="img/font-icon/more.svg" alt="">
+											</a></li>
+										<li>
+											<a href="#">
+												Franczyza
+												<img src="img/font-icon/more.svg" alt="">
+											</a>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -175,13 +189,14 @@
 								<h2>Dostawa</h2>
 								<div class="about__icon"><img src="img/about/order.svg" alt=""></div>
 							</div>
-							<ul class="about__list">
+							<ol>
 								<li>Obszar dostawy: cała Warszawa + 15 km od adresu Fit Cake Ursynów (Al. KEN 97 lok U7).</li>
 								<li>Koszt dostawy: 4 zł za 1 km od naszej "niecukierni", zależny od dzielnicy.</li>
-								<li>Kontakt w celu uzgodnienia daty i czasu dostawy: <br>
-									<p>Telefon: <a href="tel:730301053">730 301 053</a></p>
-									<p>E-mail: <a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></p>
-								</li>
+								<li>Kontakt w celu uzgodnienia daty i czasu dostawy:</li>
+							</ol>
+							<ul>
+								<li>Telefon: <a href="tel:730301053">730 301 053</a></li>
+								<li>E-mail: <a href="mailto:warszawa-ursynow@fitcake.pl">warszawa-ursynow@fitcake.pl</a></li>
 							</ul>
 						</div>
 						<div class="about__block">
@@ -189,20 +204,26 @@
 								<h2>Opłata</h2>
 								<div class="about__icon"><img src="img/about/payment.svg" alt=""></div>
 							</div>
-							<ul class="about__list">
+							<ol>
 								<li>Minimalne zamówienie: 80 zł (plus opłata za dostawę dla zamówień poniżej 400 zł).</li>
-								<li>Obowiązkowa wpłata: <br>
-									<p>Całkowita suma dla zamówień poniżej 150 zł.</p>
-									<p>Dla zamówień 150 zł i więcej – pełny koszt lub zaliczka 50 zł (reszta opłaty na miejscu).</p>
-								</li>
-								<li>Metody płatności: <br>
-									<p>PayU (płatność online).</p>
-									<p>Przelew bankowy.</p>
-									<p>Gotówka.</p>
-									<p>Blik.</p>
-								</li>
-								<li>Rabat -5% przy opłacie całej kwoty za zamówienie (nie dotyczy dostawy).</li>
+								<li>Obowiązkowa wpłata:</li>
+							</ol>
+							<ul>
+								<li>Całkowita suma dla zamówień poniżej 150 zł.</li>
+								<li>Dla zamówień 150 zł i więcej – pełny koszt lub zaliczka 50 zł (reszta opłaty na miejscu).</li>
 							</ul>
+							<ol>
+								<li>Metody płatności:</li>
+							</ol>
+							<ul>
+								<li>PayU (płatność online).</li>
+								<li>Przelew bankowy.</li>
+								<li>Gotówka.</li>
+								<li>Blik.</li>
+							</ul>
+							<ol>
+								<li>Rabat -5% przy opłacie całej kwoty za zamówienie (nie dotyczy dostawy).</li>
+							</ol>
 						</div>
 					</div>
 					<div class="about__img">
@@ -246,7 +267,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230525105448"></script>
+	<script src="js/app.min.js?_v=20230527003517"></script>
 </body>
 
 </html>

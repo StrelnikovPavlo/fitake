@@ -5,7 +5,7 @@
 	<title>Checkout</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230525105448">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230527003517">
 	<link rel="icon" type="image/png"" href=" img/logo.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -32,7 +32,21 @@
 								<li><a href="#">O nas</a></li>
 								<li><a href="#">Blog</a></li>
 								<li><a href="#">Kontakt</a></li>
-								<li><a href="#">Franczyzodawca</a></li>
+								<li class="menu__list-submenu _icon-arrow">
+									Franczyzodawca
+									<ul class="menu__dropdown">
+										<li><a href="#">
+												FitCake.pl
+												<img src="img/font-icon/more.svg" alt="">
+											</a></li>
+										<li>
+											<a href="#">
+												Franczyza
+												<img src="img/font-icon/more.svg" alt="">
+											</a>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</nav>
 						<div class="menu__footer">
@@ -210,29 +224,67 @@
 									<div class="additional-form__label">Message the host</div>
 									<textarea name="message" cols="30" rows="10" placeholder="Optional placeholder text"></textarea>
 								</div>
-								<div data-tabs class="additional-form__order">
+								<div data-tabs class="additional-form__order _tabs">
 									<div class="additional-form__caption">Dane dostawy</div>
 									<div class="additional-form__nav">
 										<p>Jak chciałbyś otrzymać swoje zamówienie?*</p>
 										<div data-tabs-titles class="additional-form__row">
-											<button data-tabs-title type="button" class="additional-form__button button _tab-active">Odbiór osobisty</button>
-											<button data-tabs-title type="button" class="additional-form__button button">Dostawa kurierem</button>
+											<button data-tabs-title type="button" class="additional-form__button button _tabs-item _active">Odbiór osobisty</button>
+											<button data-tabs-title type="button" class="additional-form__button button _tabs-item">Dostawa kurierem</button>
 										</div>
 									</div>
 									<div data-tabs-body class="additional-form__content">
-										<div data-tabs-item class="additional-form__block">
-											<div class="additional-form__selects additional-form__selects-first">
-												<select name="form[]" class="additional-form__select">
-													<option value="1" selected>FitCake Warszawa Ursynów</option>
-													<option value="2">FitCake Warszawa Wilanow</option>
-												</select>
-												<div class="additional-form__selects-row">
+										<div class="additional-form__wrapper _tabs-block _active">
+											<div data-tabs-item class="additional-form__block">
+												<div class="additional-form__selects additional-form__selects-first">
 													<select name="form[]" class="additional-form__select">
-														<option value="1" selected>Data dostawy</option>
-														<option value="2">Data dostawy</option>
-														<option value="3">Data dostawy</option>
-														<option value="4">Data dostawy</option>
+														<option value="1" selected>FitCake Warszawa Ursynów</option>
+														<option value="2">FitCake Warszawa Wilanow</option>
 													</select>
+													<div class="additional-form__selects-row">
+														<div class="input-datapicker">
+															<input id="datapicker" type="text" name="data" placeholder="Teren dostawy">
+															<div class="input-datapicker__icon _icon-arrow"></div>
+														</div>
+														<select name="form[]" class="additional-form__select">
+															<option value="1" selected>Czas dostawy</option>
+															<option value="2">Czas dostawy</option>
+															<option value="3">Czas dostawy</option>
+															<option value="4">Czas dostawy</option>
+														</select>
+													</div>
+												</div>
+												<div class="additional-form__factura">
+													<div class="form-checkout__checkbox">
+														<input checked id="factura" class="form-checkout__checkbox-input" type="checkbox" value="1" name="form[]">
+														<label for="factura" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
+													</div>
+												</div>
+												<div class="additional-form__inputs">
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">Nazwa firmy*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
+													</div>
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">NIP*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-form__wrapper _tabs-block">
+											<div data-tabs-item class="additional-form__block">
+												<div class="additional-form__selects">
+													<div class="input-datapicker">
+														<input id="datapicker2" type="text" name="data" placeholder="Teren dostawy">
+														<div class="input-datapicker__icon _icon-arrow"></div>
+													</div>
 													<select name="form[]" class="additional-form__select">
 														<option value="1" selected>Czas dostawy</option>
 														<option value="2">Czas dostawy</option>
@@ -240,112 +292,74 @@
 														<option value="4">Czas dostawy</option>
 													</select>
 												</div>
-											</div>
-											<div class="additional-form__factura">
-												<div class="form-checkout__checkbox">
-													<input checked id="factura" class="form-checkout__checkbox-input" type="checkbox" value="1" name="form[]">
-													<label for="factura" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
-												</div>
-											</div>
-											<div class="additional-form__inputs">
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">Nazwa firmy*</div>
-														<input type="text" name="userName" class="input">
-													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
-												</div>
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">NIP*</div>
-														<input type="text" name="userName" class="input">
-													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
-												</div>
-											</div>
-										</div>
-										<div data-tabs-item class="additional-form__block">
-											<div class="additional-form__selects">
-												<select name="form[]" class="additional-form__select">
-													<option value="1" selected>Data dostawy</option>
-													<option value="2">Data dostawy</option>
-													<option value="3">Data dostawy</option>
-													<option value="4">Data dostawy</option>
-												</select>
-												<select name="form[]" class="additional-form__select">
-													<option value="1" selected>Czas dostawy</option>
-													<option value="2">Czas dostawy</option>
-													<option value="3">Czas dostawy</option>
-													<option value="4">Czas dostawy</option>
-												</select>
-											</div>
-											<div class="additional-form__order order-additional">
-												<div class="order-additional__label">Teren dostawy</div>
-												<div class="options">
-													<div class="options__item">
-														<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
-														<label for="o_1" class="options__label"><span class="options__text">Dostawa na terenie Ursynowa albo Wilanowa - <b>GRATIS</b></span></label>
-													</div>
-													<div class="options__item">
-														<input id="o_2" class="options__input" type="radio" value="2" name="option">
-														<label for="o_2" class="options__label"><span class="options__text">Dostawa na terenie Warszawy - <b>30 zł</b></span></label>
-													</div>
-													<div class="options__item">
-														<input id="o_3" class="options__input" type="radio" value="3" name="option">
-														<label for="o_3" class="options__label"><span class="options__text">Dostawa poza Warszawę - do uzgodnienia telefonicznie</span></label>
+												<div class="additional-form__order order-additional">
+													<div class="order-additional__label">Teren dostawy</div>
+													<div class="options">
+														<div class="options__item">
+															<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+															<label for="o_1" class="options__label"><span class="options__text">Dostawa na terenie Ursynowa albo Wilanowa - <b>GRATIS</b></span></label>
+														</div>
+														<div class="options__item">
+															<input id="o_2" class="options__input" type="radio" value="2" name="option">
+															<label for="o_2" class="options__label"><span class="options__text">Dostawa na terenie Warszawy - <b>30 zł</b></span></label>
+														</div>
+														<div class="options__item">
+															<input id="o_3" class="options__input" type="radio" value="3" name="option">
+															<label for="o_3" class="options__label"><span class="options__text">Dostawa poza Warszawę - do uzgodnienia telefonicznie</span></label>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="additional-form__inputs">
-												<div class="form-checkout__input form-input _error">
-													<div class="form-input__body">
-														<div class="form-input__label">Ulica*</div>
-														<input type="text" name="userName" class="input">
+												<div class="additional-form__inputs">
+													<div class="form-checkout__input form-input _error">
+														<div class="form-input__body">
+															<div class="form-input__label">Ulica*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
-												</div>
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">Numer budynky i lokal*</div>
-														<input type="text" name="userName" class="input">
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">Numer budynky i lokal*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
-												</div>
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">Kod pocztowy*</div>
-														<input type="text" name="userName" class="input">
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">Kod pocztowy*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
-												</div>
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">Miejscowość*</div>
-														<input type="text" name="userName" class="input">
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">Miejscowość*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
 												</div>
-											</div>
-											<div class="additional-form__factura">
-												<div class="form-checkout__checkbox">
-													<input checked id="factura2" class="form-checkout__checkbox-input" type="checkbox" value="1" name="factura">
-													<label for="factura2" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
-												</div>
-											</div>
-											<div class="additional-form__inputs">
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">Nazwa firmy*</div>
-														<input type="text" name="userName" class="input">
+												<div class="additional-form__factura">
+													<div class="form-checkout__checkbox">
+														<input checked id="factura2" class="form-checkout__checkbox-input" type="checkbox" value="1" name="factura">
+														<label for="factura2" class="form-checkout__label"><span class="form-checkout__text">Chcę fakturę</span></label>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
 												</div>
-												<div class="form-checkout__input form-input">
-													<div class="form-input__body">
-														<div class="form-input__label">NIP*</div>
-														<input type="text" name="userName" class="input">
+												<div class="additional-form__inputs">
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">Nazwa firmy*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
 													</div>
-													<div class="form-input__error"><span>!</span>Optional helper text</div>
+													<div class="form-checkout__input form-input">
+														<div class="form-input__body">
+															<div class="form-input__label">NIP*</div>
+															<input type="text" name="userName" class="input">
+														</div>
+														<div class="form-input__error"><span>!</span>Optional helper text</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -455,7 +469,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230525105448"></script>
+	<script src="js/app.min.js?_v=20230527003517"></script>
 </body>
 
 </html>
